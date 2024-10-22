@@ -1,0 +1,92 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+    --rpx: 100vw / 1440;
+}
+
+.main-container {
+    overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.main-container {
+    position: relative;
+    width: calc(1440 * var(--rpx));
+    height: calc(2048 * var(--rpx));
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.flex-row-a {
+    position: relative;
+    width: calc(1388 * var(--rpx));
+    height: calc(184 * var(--rpx));
+    margin: calc(-75 * var(--rpx)) 0 0 calc(21 * var(--rpx));
+    z-index: 23;
+}
+
+.ellipse {
+    position: absolute;
+    width: calc(156.60121164248312 * var(--rpx));
+    height: calc(157.60062324434512 * var(--rpx));
+    top: 0;
+    left: calc(424.0000021917508 * var(--rpx));
+    background: url(./assets/images/b7e495f4-08dc-49fc-9d16-bcec419eee24.png) no-repeat center;
+    background-size: cover;
+    z-index: 23;
+}
+
+.kitty-cat {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: calc(96 * var(--rpx));
+    top: calc(88 * var(--rpx));
+    left: calc(101 * var(--rpx));
+    color: #410004;
+    font-family: FOT-Yuruka Std, var(--default-font-family);
+    font-size: calc(48 * var(--rpx));
+    font-weight: 900;
+    line-height: calc(96 * var(--rpx));
+    text-align: left;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.icon {
+    position: absolute;
+    width: calc(80 * var(--rpx));
+    height: calc(80 * var(--rpx));
+    top: calc(96 * var(--rpx));
+    left: 0;
+    background: url(./assets/images/b41ea2c16ad06dbcb0e6aa5c6805fa279b9f8711.png)
+    no-repeat center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.home-1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: calc(64 * var(--rpx));
+    top: calc(96 * var(--rpx));
+    left: calc(619 * var(--rpx));
+    color: #ff8981;
+}
